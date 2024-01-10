@@ -1,0 +1,178 @@
+/*Estilo Geral*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600px;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0 0 8px #00ff088a;
+  transform: scale(1.05);
+}
+
+h2.titulo {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+}
+
+h2.titulo span{
+  color: #00ff08;
+}
+
+/* Estilo do Cabeçalho */
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .logo span {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1px;
+}
+
+header .logo strong {
+  color: #00ff09;
+  font-size: 1.5rem;
+}
+
+/* Estilo do topo do site */
+
+section.topo__do__site{
+  padding: 40px 4%;
+}
+
+section.topo__do__site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo__do__site .text__top__site {
+  flex: 1;
+}
+.topo__do__site .text__top__site h1 {
+  color: #fff;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.topo__do__site .text__top__site h1 span {
+  color: #00ff08;
+}
+
+.topo__do__site .text__top__site p {
+  color: #fff;
+  margin: 40px 0;
+}
+
+.topo__do__site .img__top__site {
+  flex: 1;
+}
+
+.topo__do__site .img__top__site img {
+  width: 100%;
+  border: 3px solid #00ff08;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00ff088a;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+  0% {
+    top: 0;
+  } 100% {
+    top: 30px;
+  }
+}
+
+/* Estilo das especialidades */
+
+section.habilidades {
+  padding: 40px 4%;
+}
+
+section.habilidades .flex {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.habilidades .habilidades__box {
+  width: 350px;
+  color: #fff;
+  padding: 40px;
+  border: 2px solid #fff;
+  border-radius: 5%;
+  margin-top: 45px;
+  transition: .2s;
+  text-align: center;
+}
+
+.habilidades .habilidades__box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffff7c;
+}
+
+.habilidades .habilidades__box h3 {
+  font-size: 23px;
+  margin: 15px 0;
+  text-align: center;
+}
