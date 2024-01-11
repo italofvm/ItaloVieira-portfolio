@@ -29,10 +29,10 @@ body {
   border: 0;
   border-radius: 30px;
   cursor: pointer;
-  transition: .2s;
+  transition: all 0.3s ease;
 }
 
-.btn-contato button:hover {
+button:hover {
   box-shadow: 0 0 8px #00ff088a;
   transform: scale(1.05);
 }
@@ -40,7 +40,6 @@ body {
 h2.titulo {
   color: #fff;
   font-size: 28px;
-  text-align: center;
 }
 
 h2.titulo span{
@@ -119,6 +118,7 @@ section.topo__do__site .flex{
 .topo__do__site .text__top__site p {
   color: #fff;
   margin: 40px 0;
+  text-align: justify;
 }
 
 .topo__do__site .img__top__site {
@@ -146,6 +146,7 @@ section.topo__do__site .flex{
 
 section.habilidades {
   padding: 40px 4%;
+  text-align: center;
 }
 
 section.habilidades .flex {
@@ -175,4 +176,57 @@ section.habilidades .flex {
   font-size: 23px;
   margin: 15px 0;
   text-align: center;
+}
+
+/* Estilo do sobre */
+
+section.sobre {
+  padding: 80px 4%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .text__sobre {
+  color: #fff;
+  flex: 1;
+}
+
+.sobre .text__sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .text__sobre h2 span {
+  display: block;
+}
+
+.sobre .text__sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre .text__sobre .btn__social button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #00ff08;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.sobre .img__sobre {
+  flex: 1;
+}
+
+.sobre .img__sobre img {
+  width: 100%;
+  border: 3px solid #00ff08;
+  box-shadow: 0 0 8px #00ff088a;
 }
