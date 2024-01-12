@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #f4f4f4;
   height: 100vh;
 }
 
@@ -21,11 +21,16 @@ body {
 
 }
 
+.mb {
+  margin-bottom: 1rem;
+}
+
 .btn-contato button{
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600px;
-  background-color: #00ff08;
+  background-color: #00a8a1;
+  color: #fff;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -33,17 +38,30 @@ body {
 }
 
 button:hover {
-  box-shadow: 0 0 8px #00ff088a;
+  box-shadow: 0 0 8px #00a8a1;
   transform: scale(1.05);
 }
 
-h2.titulo {
+.btn__social button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #00a8a1;
   color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+h2.titulo {
+  color: #000;
   font-size: 28px;
 }
 
 h2.titulo span{
-  color: #00ff08;
+  color: #00a8a1;
 }
 
 /* Estilo do Cabeçalho */
@@ -66,7 +84,7 @@ header a {
 }
 
 header a:hover{
-    color: #fff;
+    color: #000;
     transform: scale(1.05);
 }
 
@@ -80,13 +98,13 @@ header nav ul li {
 }
 
 header .logo span {
-  color: #fff;
+  color: #000;
   font-size: 1.2rem;
   line-height: 1px;
 }
 
 header .logo strong {
-  color: #00ff09;
+  color: #00a8a1;
   font-size: 1.5rem;
 }
 
@@ -106,17 +124,17 @@ section.topo__do__site .flex{
   flex: 1;
 }
 .topo__do__site .text__top__site h1 {
-  color: #fff;
+  color: #000;
   font-size: 38px;
   line-height: 40px;
 }
 
 .topo__do__site .text__top__site h1 span {
-  color: #00ff08;
+  color: #00a8a1;
 }
 
 .topo__do__site .text__top__site p {
-  color: #fff;
+  color: #000;
   margin: 40px 0;
   text-align: justify;
 }
@@ -127,9 +145,9 @@ section.topo__do__site .flex{
 
 .topo__do__site .img__top__site img {
   width: 100%;
-  border: 3px solid #00ff08;
+  border: 3px solid #00a8a1;
   border-radius: 50%;
-  box-shadow: 0 0 8px #00ff088a;
+  box-shadow: 0 0 8px #0186808a;
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
 }
@@ -142,11 +160,16 @@ section.topo__do__site .flex{
   }
 }
 
-/* Estilo das especialidades */
+/* Estilo das halidades */
 
 section.habilidades {
   padding: 40px 4%;
   text-align: center;
+  background-color: #234c41;
+}
+
+section.habilidades h2{
+  color: #fff;
 }
 
 section.habilidades .flex {
@@ -190,7 +213,7 @@ section.sobre .flex {
 }
 
 .sobre .text__sobre {
-  color: #fff;
+  color: #000;
   flex: 1;
 }
 
@@ -209,24 +232,108 @@ section.sobre .flex {
   text-align: justify;
 }
 
-.sobre .text__sobre .btn__social button {
-  width: 60px;
-  height: 60px;
-  border: none;
-  border-radius: 50%;
-  background-color: #00ff08;
-  font-size: 25px;
-  cursor: pointer;
-  margin: 0 5px;
-  transition: all 0.3s ease;
-}
-
 .sobre .img__sobre {
   flex: 1;
 }
 
 .sobre .img__sobre img {
   width: 100%;
-  border: 3px solid #00ff08;
-  box-shadow: 0 0 8px #00ff088a;
+  border: 3px solid #00a8a1;
+  box-shadow: 0 0 8px #0186808a;
+}
+
+/* Estilo do Portfolio */
+
+section.portfolio{
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+  text-align: center;
+  scroll-margin-top: 15rem;
+  color: #fff;
+  background-color: #234c41;
+}
+
+section.portfolio h2{
+  color: #fff;
+}
+
+section.portfolio .flex {
+  justify-content: space-around;
+  gap: 80px;
+}
+
+section.portfolio .titulo {
+  margin: 24px 0;
+}
+
+section.portfolio p{
+  margin: 24px 0;
+}
+
+.portfolio ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.portfolio ul li.projects__reversed-list {
+  flex-direction: row-reverse;
+}
+
+.portfolio ul li:not(:last-of-type) {
+  margin-bottom: 12rem;
+}
+
+.portfolio .img__port img {
+  width: 100%;
+  min-width: 40rem;
+  max-width: 47rem;
+  height: auto;
+}
+
+.portfolio ul li .projects__info {
+  max-width: 47rem;
+}
+
+.portfolio ul li .projects__info p {
+  margin: 1rem 0 4rem;
+}
+
+.portfolio ul li .projects__info a{
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.portfolio ul li .flex {
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Estilo do footer */
+
+footer {
+  padding: 40px 4%;
+  text-align: center;
+}
+
+footer .footer .flex {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer__content .footer__contact span {
+  display: block;
+  font-weight: 500;
+}
+
+footer .footer__content a{
+  display: inline-block;
+  padding: 1rem;
+}
+
+footer .footer__content .footer__copyright{
+  font-size: 1rem;
 }
