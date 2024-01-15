@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/menu-mobile.css" />
+    <link rel="stylesheet" href="/assets/css/top.css" />
+    <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/habilidades.css" />
+    <link rel="stylesheet" href="/assets/css/projects.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
     <link rel="shortcut icon" href="/assets/img/docs.png" type="image/x-icon">
     <title>Portfolio</title>
   </head>
@@ -31,26 +38,49 @@
         <!--logo-->
 
         <nav class="menu-desktop">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
+          <ul class="navbar__links">
+            <li><a href="#top">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
           </ul>
         </nav>
+
         <!--Menu-->
 
         <div class="btn-contato">
-          <a href="#">
+          <a href="#contato">
             <button>Contato</button> </a
           ><!--btn-contato-->
         </div>
+
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
       </div>
-      <!--interface-->
+  
+      <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x"></i>
+          </div>
+  
+          <nav>
+            <ul class="navbar__links">
+              <li><a href="#top">Inicio</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portfolio">Projetos</a></li>
+            </ul>
+          </nav>
+  
+      </div><!--menu-mobile-->
+      <div class="overlay-menu" id="overlay-menu"></div>
+  
+
+      </div><!--interface-->
     </header>
 
     <main>
-      <section class="topo__do__site">
+      <section class="topo__do__site" id="top">
         <div class="interface">
           <div class="flex">
 
@@ -75,7 +105,7 @@
         </div> <!--interface---->
       </section> <!--topo__do__site-->
 
-      <section class="habilidades">
+      <section class="habilidades" id="habilidades">
         <div class="interface">
           <h2 class="titulo">Minhas <span>Habilidades.</span></h2>
           <div class="flex">
@@ -114,7 +144,7 @@
         </div><!--interface-->
       </section><!--habilidades-->
 
-      <section class="sobre">
+      <section class="sobre" id="sobre">
         <div class="interface">
           <div class="flex">
 
@@ -142,11 +172,11 @@
         </div><!--interface-->
       </section><!--sobre-->
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="interface">
 
           <h2 class="titulo">
-            Meu <span>Portfólio.</span>
+            Meus <span>Projetos.</span>
           </h2>
           <p>
             De ideias abstratas a projetos bem-sucedidos, aqui estão alguns dos meus trabalhos mais recentes.
@@ -159,29 +189,27 @@
               <li>
 
                 <div class="img__port">
-                  <img src="/assets/img/landingPage.png" alt="Blog de noticias">
+                  <img src="/assets/img/landingPage.png" alt="Landing Page">
                 </div>
 
                 <div class="projects__info">
-                  <h3>Blog de noticias da marvel</h3>
+                  <h3>Landing Page - Paginas de produtos</h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque voluptatibus optio repudiandae nesciunt sint sapiente voluptates placeat veniam eius alias maxime eaque nulla, commodi dicta? Veniam, unde? Veniam, quos.
+                  Landing page desenvolvida em CSS e HTML com 5 seções para promover os produtos e serviços da empresa infoTech. A página é bem estruturada e atende aos objetivos propostos.
                 </p>
 
-                <div class="flex">
+                
                   <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://github.com/italofvm/landingpage" target="_blank">
                     <button>Repositorio</button>
                   </a>
                 </div>
 
                 <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://landingpage-italofvm.vercel.app/" target="_blank">
                     <button>Ver Demo</button>
                   </a>
-                </div>
-
                 </div>
                 
                 </div>
@@ -191,29 +219,27 @@
               <li class="projects__reversed-list">
 
                 <div class="img__port">
-                  <img src="/assets/img/Dashboard.png" alt="Blog de noticias">
+                  <img src="/assets/img/Dashboard.png" alt="Dashboard de empresa">
                 </div>
 
                 <div class="projects__info">
-                  <h3>Blog de noticias da marvel</h3>
+                  <h3>Dashboard</h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque voluptatibus optio repudiandae nesciunt sint sapiente voluptates placeat veniam eius alias maxime eaque nulla, commodi dicta? Veniam, unde? Veniam, quos.
+                  Dashboard de gerenciamento de produtos desenvolvida em Angular com funcionalidades de adicionar, remover, editar e excluir produtos.
                 </p>
 
-                <div class="flex">
+                
                   <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://github.com/italofvm/Angular-Dashboard" target="_blank">
                     <button>Repositorio</button>
                   </a>
                 </div>
 
                 <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://dashboard-italofvm.vercel.app/" target="_blank">
                     <button>Ver Demo</button>
                   </a>
-                </div>
-
                 </div>
                 
               </li>
@@ -221,29 +247,27 @@
               <li>
 
                 <div class="img__port">
-                  <img src="/assets/img/gerenciarClientes.png" alt="Blog de noticias">
+                  <img src="/assets/img/gerenciarClientes.png" alt="Gerenciador de Clientes">
                 </div>
 
                 <div class="projects__info">
-                  <h3>Blog de noticias da marvel</h3>
+                  <h3>Gerenciador de Clientes</h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque voluptatibus optio repudiandae nesciunt sint sapiente voluptates placeat veniam eius alias maxime eaque nulla, commodi dicta? Veniam, unde? Veniam, quos.
+                  gerenciamento de clientes desenvolvida em Angular com funcionalidades de adicionar, remover, editar e excluir produtos.
                 </p>
 
-                <div class="flex">
+                
                   <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://github.com/italofvm/Gerenciar_Clientes" target="_blank">
                     <button>Repositorio</button>
                   </a>
                 </div>
 
                 <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://gerenciar-clientes.vercel.app/" target="_blank">
                     <button>Ver Demo</button>
                   </a>
-                </div>
-
                 </div>
 
               </li>
@@ -258,22 +282,20 @@
                   <h3>Blog de noticias da marvel</h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque voluptatibus optio repudiandae nesciunt sint sapiente voluptates placeat veniam eius alias maxime eaque nulla, commodi dicta? Veniam, unde? Veniam, quos.
+                  desenvolveu um blog de notícias da Marvel em Angular com uma interface moderna e responsiva, além de conteúdo de alta qualidade sobre os últimos lançamentos da Marvel.
                 </p>
 
-                <div class="flex">
+                
                   <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://github.com/italofvm/Angular_Blog" target="_blank">
                     <button>Repositorio</button>
                   </a>
                 </div>
 
                 <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://angular-marvel-blog.vercel.app/" target="_blank">
                     <button>Ver Demo</button>
                   </a>
-                </div>
-
                 </div>
 
               </li>
@@ -281,59 +303,25 @@
               <li>
 
                 <div class="img__port">
-                  <img src="/assets/img/shop-shoes.png" alt="Blog de noticias">
+                  <img src="/assets/img/Barbearia.png" alt="Barbearia Cortes de elite">
                 </div>
 
                 <div class="projects__info">
-                  <h3>Blog de noticias da marvel</h3>
+                  <h3>Barbearia Cortes de Elite</h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque voluptatibus optio repudiandae nesciunt sint sapiente voluptates placeat veniam eius alias maxime eaque nulla, commodi dicta? Veniam, unde? Veniam, quos.
+                  landing page da barbearia Cortes de Elite desenvolvida em Angular com imagens de alta qualidade, design responsivo e CTA clara.
                 </p>
 
-                <div class="flex">
                   <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://github.com/italofvm/Angular-Barbearia" target="_blank">
                     <button>Repositorio</button>
                   </a>
-                </div>
 
                 <div class="btn-contato">
-                  <a href="#">
+                  <a href="https://barbearia-cortes-de-elite.vercel.app/" target="_blank">
                     <button>Ver Demo</button>
                   </a>
-                </div>
-
-                </div>
-
-              </li>
-
-              <li class="projects__reversed-list">
-
-                <div class="img__port">
-                  <img src="/assets/img/Barbearia.png" alt="Blog de noticias">
-                </div>
-
-                <div class="projects__info">
-                  <h3>Blog de noticias da marvel</h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque voluptatibus optio repudiandae nesciunt sint sapiente voluptates placeat veniam eius alias maxime eaque nulla, commodi dicta? Veniam, unde? Veniam, quos.
-                </p>
-
-                <div class="flex">
-                  <div class="btn-contato">
-                  <a href="#">
-                    <button>Repositorio</button>
-                  </a>
-                </div>
-
-                <div class="btn-contato">
-                  <a href="#">
-                    <button>Ver Demo</button>
-                  </a>
-                </div>
-
                 </div>
 
               </li>
@@ -346,7 +334,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contato">
       <div class="footer interface mb">
         <div class="footer__content mb flex">
           <h2 class="titulo mb">Vamos <span>conversar?</span></h2>
@@ -354,8 +342,7 @@
             Ficarei feliz em saber mais sobre seus projetos e como podemos trabalhar juntos para torná-los realidade.
           </p>
           <div class="footer__contact mb">
-            <span class="mb">email@teste.com</span>
-            <span class="mb">00 00000-0000</span>
+            <span class="mb">italofernandesvm@gmail.com</span>
           </div>
 
           <div class="btn__social mb">
@@ -371,5 +358,7 @@
         </div><!--footer__content-->
       </div><!--interface-->
     </footer><!--footer-->
+
+    <script src="/assets/js/menu.js"></script>
   </body>
 </html>

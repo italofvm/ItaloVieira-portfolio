@@ -1,0 +1,26 @@
+/* Estilo do footer */
+
+footer {
+    padding: 40px 4%;
+    text-align: center;
+  }
+  
+  footer .footer .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer .footer__content .footer__contact span {
+    display: block;
+    font-weight: 500;
+  }
+  
+  footer .footer__content a{
+    display: inline-block;
+    padding: 1rem;
+  }
+  
+  footer .footer__content .footer__copyright{
+    font-size: 1rem;
+  }

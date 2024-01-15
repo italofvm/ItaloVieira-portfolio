@@ -1,0 +1,71 @@
+/* Estilo do topo do site */
+
+section.topo__do__site{
+    padding: 8rem 4%;
+  }
+  
+  section.topo__do__site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  .topo__do__site .text__top__site {
+    flex: 1;
+  }
+  .topo__do__site .text__top__site h1 {
+    color: #000;
+    font-size: 38px;
+    line-height: 40px;
+  }
+  
+  .topo__do__site .text__top__site h1 span {
+    color: #00a8a1;
+  }
+  
+  .topo__do__site .text__top__site p {
+    color: #000;
+    margin: 40px 0;
+    text-align: justify;
+  }
+  
+  .topo__do__site .img__top__site {
+    flex: 1;
+  }
+  
+  .topo__do__site .img__top__site img {
+    width: 100%;
+    border: 3px solid #00a8a1;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #0186808a;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes flutuar{
+    0% {
+      top: 0;
+    } 100% {
+      top: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    
+    section.topo__do__site .flex{
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    .topo__do__site .img__top__site img {
+      width: 70%;
+    }
+    
+    .topo__do__site .text__top__site p {
+      margin: 40px 0;
+    }
+
+    .topo__do__site .btn-contato {
+      display: none;
+    }
+  }

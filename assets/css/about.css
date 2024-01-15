@@ -1,0 +1,54 @@
+/* Estilo do sobre */
+
+section.sobre {
+    padding: 80px 4%;
+  }
+  
+  section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .sobre .text__sobre {
+    color: #000;
+    flex: 1;
+  }
+  
+  .sobre .text__sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .sobre .text__sobre h2 span {
+    display: block;
+  }
+  
+  .sobre .text__sobre p {
+    margin: 20px 0;
+    text-align: justify;
+  }
+  
+  .sobre .img__sobre {
+    flex: 1;
+  }
+  
+  .sobre .img__sobre img {
+    width: 100%;
+    border: 3px solid #00a8a1;
+    box-shadow: 0 0 8px #0186808a;
+  }
+
+  @media only screen and (max-width: 768px)  {
+    
+    section.sobre .flex {
+      flex-direction: row;
+    }
+  }
+
+  @media only screen and (max-width:425px)  {
+    
+    section.sobre .flex {
+      flex-direction: column;
+    }
+  }

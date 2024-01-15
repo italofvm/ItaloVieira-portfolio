@@ -1,0 +1,57 @@
+/* Estilo do Cabeçalho */
+
+header {
+    padding: 10px 4%;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: #fff;
+  }
+  
+  header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+  }
+  
+  header a:hover{
+      color: #000;
+      transform: scale(1.05);
+  }
+  
+  header nav ul {
+      list-style-type: none;
+  }
+  
+  .menu-desktop ul li {
+      display: inline-block;
+      padding: 0 40px;
+  }
+  
+  header .logo span {
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 1px;
+  }
+  
+  header .logo strong {
+    color: #00a8a1;
+    font-size: 1.5rem;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+}

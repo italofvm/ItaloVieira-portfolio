@@ -1,0 +1,40 @@
+/* Estilo das halidades */
+
+section.habilidades {
+    padding: 40px 4%;
+    text-align: center;
+    background-color: #234c41;
+  }
+  
+  section.habilidades h2{
+    color: #fff;
+  }
+  
+  section.habilidades .flex {
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .habilidades .habilidades__box {
+    width: 350px;
+    color: #fff;
+    padding: 40px;
+    border: 2px solid #fff;
+    border-radius: 5%;
+    margin-top: 45px;
+    transition: .2s;
+    text-align: center;
+  }
+  
+  .habilidades .habilidades__box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff7c;
+  }
+  
+  .habilidades .habilidades__box h3 {
+    font-size: 23px;
+    margin: 15px 0;
+    text-align: center;
+  }
