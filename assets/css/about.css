@@ -48,6 +48,10 @@ section.sobre {
 
   @media only screen and (max-width:425px)  {
     
+    section.sobre {
+      text-align: center;
+    }
+
     section.sobre .flex {
       flex-direction: column;
     }

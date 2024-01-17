@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.btn-contato button, .btn-menu{
+.btn-contato button, .btn-menu, .btn-projects button, .btn-contato-mobile button{
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600px;

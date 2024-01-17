@@ -45,6 +45,10 @@ header {
     color: #00a8a1;
     font-size: 1.5rem;
   }
+
+  .btn-contato-mobile {
+    display: none;
+  }
   
 
   @media only screen and (max-width: 768px) {
@@ -52,6 +56,10 @@ header {
     .menu-desktop,
     .btn-contato {
         display: none;
+    }
+
+    .btn-contato-mobile {
+      display: block;
     }
 
 }
